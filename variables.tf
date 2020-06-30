@@ -72,7 +72,7 @@ variable "agent_pool_profile" {
 
 variable "default_node_pool" {
   description = "A default_node_pool block, see terraform.io/docs/providers/azurerm/r/kubernetes_cluster.html#default_node_pool"
-  type        = map(any)
+  type        = map(string)
   default = {
     name                = "nodepool"
     vm_size             = "standard_f2"
